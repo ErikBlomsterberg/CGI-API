@@ -17,7 +17,7 @@ Contains a single endpoint which retrieves data.
 
 Run 'npm start' in the terminal to start server.
 
-## Endpoint call
+## Call endpoint
 
 With browser:  
 Enter 'http://localhost:3000/api/data?limit=x' in the searchbar (OBS! replace x with a whole number > 0, or omit limit).
