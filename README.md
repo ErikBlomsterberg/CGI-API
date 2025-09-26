@@ -7,7 +7,7 @@ Contains a single endpoint which retrieves data.
 
 1. Run 'git clone https://github.com/ErikBlomsterberg/CGI-API.git' from the terminal.
 
-2. Create a file named '.env' in the project root. Add 'PORT=3000' to the file.
+2. Create a file named '.env' in the project root and add 'PORT=3000' to the file.
 
 3. Run 'npm install' from the terminal to install dependencies.
 
