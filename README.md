@@ -21,11 +21,11 @@ Run 'npm start' from the terminal to start server.
 
 From browser:
 Enter 'http://localhost:3000/api/data?limit=x' in the searchbar (OBS! replace x with a whole number > 0, or omit limit).
-Example: 'http://localhost:3000/api/data?limit=10', which return the first ten rows of data.
+Example1: 'http://localhost:3000/api/data?limit=10', which returns the first ten rows of data. Example2: 'http://localhost:3000/api/data', which returns all data rows.
 
 With cURL:
 Run 'curl -i http://localhost:3000/api/data?limit=x' from the terminal (OBS! replace x with a whole number > 0, or omit limit).
-Example: 'curl -i http://localhost:3000/api/data?limit=10', which return the first ten rows of data.
+Example1: 'curl -i http://localhost:3000/api/data?limit=10', which returns the first ten rows of data. Example2: 'curl -i http://localhost:3000/api/data', which returns all data.
 
 ## Data files
 
