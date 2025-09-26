@@ -11,7 +11,7 @@ Contains a single endpoint which retrieves data.
 
 3. Run 'npm install' in the terminal to install dependencies.
 
-4. (Optional) Change value of constant 'filePath' in 'src\routes\dataRoutes.js' to use a different csv-file. Is currently set to 'data/data.csv'.
+4. (Optional) Change value of constant 'filePath' in 'src\routes\dataRoutes.js' to use a different csv-file. Is currently set to 'data/data.csv' (file is included in the project).
 
 ## Start server
 
@@ -30,5 +30,5 @@ Example1: 'curl -i http://localhost:3000/api/data?limit=10', which returns the f
 ## Data files
 
 'data\data.csv' is a csv-file containing user-info. Columns: id;name;age;email.  
-'data\onlyHeaders.csv' is a csv-file with only headers. Header: id;name,age;email.  
+'data\onlyHeaders.csv' is a csv-file with only headers. Headers: id;name,age;email.  
 'data\empty.csv' is an empty csv-file.
