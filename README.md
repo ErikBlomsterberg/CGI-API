@@ -11,9 +11,11 @@ Contains a single endpoint which retrieves data.
 
 3. Run 'npm install' from the terminal to install dependencies.
 
+4. Change constant 'filePath' in 'src\routes\dataRoutes.js' to use a different csv-file. Is currently set to "data/data.csv".
+
 ## Start server
 
-1. Run 'npm start' from the terminal.
+Run 'npm start' from the terminal to start server.
 
 ## Endpoint call
 
@@ -25,6 +27,9 @@ With cURL:
 Run 'curl -i http://localhost:3000/api/data?limit=x' from the terminal (OBS! replace x with a whole number > 0).
 Example: 'curl -i http://localhost:3000/api/data?limit=10', which return the first ten rows of data.
 
-# Data file
+## Data files
 
-data.xlxs is an excel-file containing user-info. Columns: id, name, age, email.
+data.csv is a csv-file containing user-info. Columns: id;name;age;email.
+onlyHeaders.csv is a csv-file with only headers. Header: id;name,age;email.
+empty.csv is a empty csv-file
+Change filePath in src\routes\dataRoutes.js to use a different csv-file.

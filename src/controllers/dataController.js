@@ -1,6 +1,6 @@
 // dataController.js: Handles HTTP requests for data operations
 
-import ExcelData from "../data/excelData.js";
+import CSVData from "../data/CSVData.js";
 
 /**
  * Controller for handling data-related API requests.
@@ -13,10 +13,10 @@ class DataController {
    */
   constructor(filePath) {
     // Initialize ExcelData instance with provided file path
-    this.dataObj = new ExcelData(filePath);
+    this.dataObj = new CSVData(filePath);
     // Store parsed data
     this.data = this.dataObj.data;
-    // Bind getData method to ensure correct 'this' context
+    // Bind getData method to ensure correct 'this' context chen calling
     this.getData = this.getData.bind(this);
   }
 
@@ -31,6 +31,11 @@ class DataController {
       return res.sendStatus(500);
     }
 
+    // Return 204 if no data is available
+    if (this.data.length === 0) {
+      return res.sendStatus(204);
+    }
+
     // Parse limit query parameter or default to full data length
     const limit =
       req.query.limit !== undefined
@@ -40,11 +45,6 @@ class DataController {
     // Validate limit is a positive integer
     if (!Number.isInteger(limit) || limit <= 0) {
       return res.sendStatus(400);
-    }
-
-    // Return 204 if no data is available
-    if (this.data.length === 0) {
-      return res.sendStatus(204);
     }
 
     // Send sliced data based on limit
