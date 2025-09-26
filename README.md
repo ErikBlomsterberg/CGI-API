@@ -1,6 +1,6 @@
 # CGI REST API
 
-A REST API built with Node.js and Express.  
+A REST-API built with Node.js and Express.  
 Contains a single endpoint which retrieves data.
 
 ## Set up
