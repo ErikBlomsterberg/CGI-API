@@ -25,7 +25,7 @@ Example1: 'http://localhost:3000/api/data?limit=10', which returns the first ten
 
 With cURL:  
 Run 'curl -i http://localhost:3000/api/data?limit=x' in the terminal (OBS! replace x with a whole number > 0, or omit limit).
-Example1: 'curl -i http://localhost:3000/api/data?limit=10', which returns the first ten rows of data. Example2: 'curl -i http://localhost:3000/api/data', which returns all data.
+Example1: 'curl -i http://localhost:3000/api/data?limit=10', which returns the first ten rows of data. Example2: 'curl -i http://localhost:3000/api/data', which returns all data rows.
 
 ## Data files
 
