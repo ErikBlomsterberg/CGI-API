@@ -1,8 +1,8 @@
-const express = require("express");
+import express from "express";
+import dataController from "../controllerClasses/dataController.js";
+
 const router = express.Router();
-const userController = require("../controllers/dataControllers");
 
-// API endpoint for fetching data
-router.get("/", userController.getData);
+router.get("/", dataController.getData);
 
-module.exports = router;
+export default router;

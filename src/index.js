@@ -1,17 +1,15 @@
-const express = require("express");
-const dataRoutes = require("./routes/dataRoutes");
-require("dotenv").config();
+import express from "express";
+import dataRoutes from "./routes/dataRoutes.js";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware to parse JSON
 app.use(express.json());
-
-// Routes
 app.use("/api/data", dataRoutes);
 
-// Start server
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
