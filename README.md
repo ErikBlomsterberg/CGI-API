@@ -11,7 +11,7 @@ Contains a single endpoint which retrieves data.
 
 3. Run 'npm install' from the terminal to install dependencies.
 
-4. Change constant 'filePath' in 'src\routes\dataRoutes.js' to use a different csv-file. Is currently set to "data/data.csv".
+4. (Optional) Change value of constant 'filePath' in 'src\routes\dataRoutes.js' to use a different csv-file. Is currently set to "data/data.csv".
 
 ## Start server
 
@@ -24,7 +24,7 @@ Enter 'http://localhost:3000/api/data?limit=x' in the searchbar (OBS! replace x 
 Example: 'http://localhost:3000/api/data?limit=10', which return the first ten rows of data.
 
 With cURL:
-Run 'curl -i http://localhost:3000/api/data?limit=x' from the terminal (OBS! replace x with a whole number > 0, or omit).
+Run 'curl -i http://localhost:3000/api/data?limit=x' from the terminal (OBS! replace x with a whole number > 0, or omit limit).
 Example: 'curl -i http://localhost:3000/api/data?limit=10', which return the first ten rows of data.
 
 ## Data files
