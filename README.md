@@ -11,7 +11,7 @@ Contains a single endpoint which retrieves data.
 
 3. Run 'npm install' from the terminal to install dependencies.
 
-## Run
+## Start server
 
 1. Run 'npm start' from the terminal.
 
@@ -27,4 +27,4 @@ Example: 'curl -i http://localhost:3000/api/data?limit=10', which return the fir
 
 # Data file
 
-data.xlxs is an excel-file containing user-info. Columns are: id, name, age, email.
+data.xlxs is an excel-file containing user-info. Columns: id, name, age, email.

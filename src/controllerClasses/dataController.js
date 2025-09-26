@@ -1,16 +1,16 @@
-import ExcelData from "../dataClasses/excelData.js";
+// DataController.js
+// This file defines the DataController class, which manages and serves data from an Excel file
+// using the ExcelData class. It provides a method to retrieve data with optional pagination.
+
+import { ExcelData } from "../dataClasses/dataClasses.js";
 
 class DataController {
   constructor() {
-    const dataObj = new ExcelData(
+    this.dataObj = new ExcelData(
       "C:/Users/Asus/Desktop/CGI-API/data/users.xlsx"
     );
 
-    // const dataObj = new ExcelData(
-    //   "C:/Users/Asus/Desktop/CGI-API/data/empty.xlsx"
-    // );
-
-    this.data = dataObj.data;
+    this.data = this.dataObj.data;
     this.getData = this.getData.bind(this);
   }
 
