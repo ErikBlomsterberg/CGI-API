@@ -29,6 +29,6 @@ Example: 'curl -i http://localhost:3000/api/data?limit=10', which return the fir
 
 ## Data files
 
-data.csv is a csv-file containing user-info. Columns: id;name;age;email.  
-onlyHeaders.csv is a csv-file with only headers. Header: id;name,age;email.  
-empty.csv is a empty csv-file.
+'data.csv' is a csv-file containing user-info. Columns: id;name;age;email.  
+'onlyHeaders.csv' is a csv-file with only headers. Header: id;name,age;email.  
+'empty.csv' is a empty csv-file.
