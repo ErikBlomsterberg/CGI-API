@@ -1,14 +1,14 @@
-// dataController.js: Handles HTTP requests for data operations
+// CSVController.js: Handles HTTP requests for data operations
 
 import CSVData from "../data/CSVData.js";
 
 /**
- * Controller for handling data-related API requests.
+ * Controller for handling CSV-related API requests.
  * @class
  */
-class DataController {
+class CSVController {
   /**
-   * Creates a DataController instance.
+   * Creates a CSVController instance.
    * @param {string} filePath - Path to the Excel file.
    */
   constructor(filePath) {
@@ -52,4 +52,4 @@ class DataController {
   }
 }
 
-export default DataController;
+export default CSVController;
